@@ -6,7 +6,7 @@ import css from "./Contact.module.css";
 export default function Contact({ item }) {
   const dispatch = useDispatch();
   return (
-    <li className={css.contactItem}>
+    <div className={css.contactItem}>
       <div className={css.info}>
         <p>
           <FaUser className={css.icon} />
@@ -25,6 +25,6 @@ export default function Contact({ item }) {
       >
         Delete
       </button>
-    </li>
+    </div>
   );
 }
